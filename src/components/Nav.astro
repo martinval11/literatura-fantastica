@@ -1,9 +1,37 @@
-<nav>
-  <h3>Literatura Fantastica</h3>
+<nav class='nav'>
+	<h3>Literatura Fantástica</h3>
 </nav>
 
 <style>
-  nav {
-    padding: 1rem;
+	nav {
+		padding: 0.1rem 1rem;
+		background: #105359;
+		color: #fff;
+		position: fixed;
+		z-index: 1;
+		width: 100%;
+    transition: all .3s ease-in-out;
+    margin-top: -63px;
+	}
+
+  .show {
+    margin-top: 0;
   }
 </style>
+
+<script>
+	let prevScrollPos = window.scrollY;
+
+	window.addEventListener('scroll', () => {
+		const currentScrollPos = window.scrollY;
+
+		if (prevScrollPos > 400) {
+			document.querySelector('.nav').classList.add('show');
+		} else {
+			document.querySelector('.nav').classList.remove('show');
+		}
+
+		// update previous scroll position
+		prevScrollPos = currentScrollPos;
+	});
+</script>

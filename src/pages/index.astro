@@ -1,72 +1,91 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
 ---
 
-<Layout title="Literatura Fantastica">
+<Layout title='Literatura Fantástica'>
+	<Nav />
+
+	<header>
+		<img
+			src='img/header.jpg'
+			alt='Retrato de la Literatura Fantástica'
+		/>
+		<div id='center'>
+			<h1>Literatura Fantástica</h1>
+		</div>
+	</header>
+
 	<main>
-		<h1>Literatura Fantástica</h1>
-
+		La literatura fantástica es una narrativa en la que aparecen elementos que
+		no se pueden explicar por medio de la razón, que ponen la realidad en
+		cuestión y que tienen algo de sobrenatural, extraordinario o mágico.
 		<h2>Definiciones</h2>
-		<p>Definir la Literatura Fantástica es un asunto complejo. Ya que no existe una definión exacta.</p>
+		<p>
+			Definir la Literatura Fantástica es un asunto complejo. Ya que no existe
+			una definión exacta.
+		</p>
 		<li>
-			<b>Tzvetan Todorov</b>: Define lo fantástico como un momento de duda del personaje
-			y del lector ante la presencia de fenómenos sobrenaturales o maravillosos. 
-			Esto implica la existencia de un mundo realista que se ve sacudido por 
-			la presencia de fenómenos anormales.
-		</li>
-		
-		<li>
-			<b>Ana María Barrenechea</b>: Plantea que la literatura fantástica es la confrontación 
-			entre el mundo literario y el régimen de experiencia del lector, que se compone de lo que
-			socialmente consideramos "normal".
-		</li>
-		
-		<li>
-			<b>Julio Cortázar</b>: Para Julio Cortazar, lo fantástico no se distancia mucho de lo real. 
-			Ya que en la realidad tambien pueden ocurrir fenómenos extraños.
+			<b>Tzvetan Todorov</b>: Define lo fantástico como un momento de duda del
+			personaje y del lector ante la presencia de fenómenos sobrenaturales o
+			maravillosos. Esto implica la existencia de un mundo realista que se ve
+			sacudido por la presencia de fenómenos anormales.
 		</li>
 
-		Aunque no hay una definición exacta para la literatura fantástica, este 
-		<b>siempre exige una transgreción de la realidad</b> basada en una fuerte capacidad imaginativa
-		que muestra seres sobrenaturales, hechos anormales o situaciones irreales.
+		<li>
+			<b>Ana María Barrenechea</b>: Plantea que la literatura fantástica es la
+			confrontación entre el mundo literario y el régimen de experiencia del
+			lector, que se compone de lo que socialmente consideramos "normal".
+		</li>
+
+		<li>
+			<b>Julio Cortázar</b>: Para Julio Cortazar, lo fantástico no se distancia
+			mucho de lo real. Ya que en la realidad tambien pueden ocurrir fenómenos
+			extraños.
+		</li>
+
+		 Aunque no hay una definición exacta para la literatura fantástica, esta
+		<b>siempre exige una transgreción de la realidad</b> basada en una fuerte
+		capacidad imaginativa que muestra seres sobrenaturales, hechos anormales o
+		situaciones irreales.
 
 		<h2>Cuentos y Autores</h2>
 		<article>
 			<h3>Julio Cortázar</h3>
 
-			<div id="books__container">
+			<div id='books__container'>
 				<div>
-					<img 
-						src="img/cortazar/casatomada.jpeg" 
-						alt="Portada del libro casa tomada de Julio Cortázar"
-						loading="lazy" 
+					<img
+						src='img/cortazar/casatomada.jpeg'
+						alt='Portada del libro casa tomada de Julio Cortázar'
+						loading='lazy'
 					/>
 					<h4>Casa Tomada</h4>
 				</div>
 
 				<div>
-					<img 
-			 			src="img/cortazar/continuidad-de-los-parques.jpg" 
-						alt="Portada del libro Continuidad de los parques" 
-						loading="lazy"
+					<img
+						src='img/cortazar/continuidad-de-los-parques.jpg'
+						alt='Portada del libro Continuidad de los parques'
+						loading='lazy'
 					/>
 					<h4>Continuidad de los parques</h4>
 				</div>
-			
+
 				<div>
-					<img 
-						src="img/cortazar/axolotl.jpg"
-						alt="Portada del libro Axolotl"
-						loading="lazy"
+					<img
+						src='img/cortazar/axolotl.jpg'
+						alt='Portada del libro Axolotl'
+						loading='lazy'
 					/>
 					<h4>Axolotl</h4>
 				</div>
 
 				<div>
-					<img 
-						src="img/cortazar/lejana.jpg" 
-						alt="Portada del libro Lejana" 
-	 					loading="lazy"
+					<img
+						src='img/cortazar/lejana.jpg'
+						alt='Portada del libro Lejana'
+						loading='lazy'
 					/>
 					<h4>Lejana</h4>
 				</div>
@@ -76,21 +95,21 @@ import Layout from '../layouts/Layout.astro';
 		<article>
 			<h3>Samantha Schweblin</h3>
 
-			<div id="books__container">
+			<div id='books__container'>
 				<div>
-					<img 
-			 			src="img/samantha/en-la-estepa.jpg" 
-			 			alt="Portada del libro En la estepa" 
-			 			loading="lazy"
-			 		/>
+					<img
+						src='img/samantha/en-la-estepa.jpg'
+						alt='Portada del libro En la estepa'
+						loading='lazy'
+					/>
 					<h4>En la estepa</h4>
 				</div>
 
 				<div>
-					<img 
-			 			src="img/samantha/pajaros-en-la-boca.jpg" 
-						alt="Portada del libro Pajaros en la boca" 
-						loading="lazy" 
+					<img
+						src='img/samantha/pajaros-en-la-boca.jpg'
+						alt='Portada del libro Pajaros en la boca'
+						loading='lazy'
 					/>
 					<h4>Pájaros en la boca</h4>
 				</div>
@@ -100,21 +119,21 @@ import Layout from '../layouts/Layout.astro';
 		<article>
 			<h3>Jorge Luis Borges</h3>
 
-			<div id="books__container">
+			<div id='books__container'>
 				<div>
-					<img 
-			 			src="img/borges/las-ruinas-circulares.jpg" 
-						alt="Portada del libro Las Ruinas Circulares" 
-						loading="lazy" 
+					<img
+						src='img/borges/las-ruinas-circulares.jpg'
+						alt='Portada del libro Las Ruinas Circulares'
+						loading='lazy'
 					/>
 					<h4>Las Ruinas Circulares</h4>
 				</div>
 
 				<div>
-					<img 
-			 			src="img/borges/antologia-de-la-literatura-fantastica.webp" 
-			 			alt="Portada del libro de la Antología de la literatura fantástica" 
-			 			loading="lazy"
+					<img
+						src='img/borges/antologia-de-la-literatura-fantastica.webp'
+						alt='Portada del libro de la Antología de la literatura fantástica'
+						loading='lazy'
 					/>
 					<h4>Antología de la Literatura Fantástica</h4>
 				</div>
@@ -124,38 +143,67 @@ import Layout from '../layouts/Layout.astro';
 		<article>
 			<h3>Hector Hugh Munro (Saki)</h3>
 
-			<div id="books__container">
+			<div id='books__container'>
 				<div>
-					<img 
-			 			src="img/saki/sredni-vashtar.jpg" 
-						alt="Portada del libro Sredni Vashtar" 
-						loading="lazy" 
+					<img
+						src='img/saki/sredni-vashtar.jpg'
+						alt='Portada del libro Sredni Vashtar'
+						loading='lazy'
 					/>
 					<h4>Sredni Vashtar</h4>
 				</div>
 			</div>
 		</article>
-
-		<h2>Lecturas</h2>
-
 	</main>
 </Layout>
 
 <style>
+	header {
+		position: relative;
+		background: #000;
+
+		& img {
+			width: 100%;
+			height: 450px;
+			object-fit: cover;
+			opacity: 0.5;
+		}
+
+		#center {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 18px;
+			color: #fff;
+		}
+	}
+
 	main {
 		margin: auto;
 		padding: 1rem;
-		width: 800px;
+		width: 700px;
 		max-width: calc(100% - 2rem);
 		line-height: 1.6;
 	}
-	
+
 	h1 {
-		font-size: 3rem;
+		font-size: 3.2rem;
 		font-weight: 700;
 		line-height: 1;
 		text-align: center;
 		margin-bottom: 1em;
+	}
+
+	h2 {
+		font-size: 1.8rem;
+		margin-bottom: 0;
+		margin-top: 16px;
+	}
+
+	h3 {
+		font-size: 1.3rem;
+		margin-top: 10px;
 	}
 
 	li {
@@ -165,16 +213,25 @@ import Layout from '../layouts/Layout.astro';
 
 	#books__container {
 		display: grid;
-		grid-template-columns: repeat(
-			auto-fit,
-			minmax(300px, 2fr)
-		);
+		grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
 		gap: 0.5rem;
-	}
 
-	#books__container img {
-		width: 335px;
-		height: 400px;
-		object-fit: cover;
+		& img {
+			width: 100%;
+			height: 360px;
+			object-fit: cover;
+		}
+
+		& div {
+			border: 1px solid #ddd;
+			padding: 10px;
+			border-radius: 3px;
+		}
+
+		& h4 {
+			margin: 0;
+			text-align: center;
+			font-size: 20px;
+		}
 	}
 </style>

@@ -10,11 +10,27 @@ const { title } = Astro.props;
 <html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Literatura Fantastica" />
+		<meta name="description" content="Descubre las definiciones, cuentos y autores de la Literatura Fantástica!" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="shortcut icon" href="favicon.png" type="image/png" />
 		<title>{title}</title>
+		<!-- Facebook Meta Tags -->
+		<meta property="og:url" content="https://fantastico.vercel.app" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Literatura Fantástica" />
+		<meta property="og:description" content="Descubre las definiciones, cuentos y autores de la Literatura Fantástica!" />
+		<meta property="og:image" content="favicon.png" />
+	
+		<!-- Twitter Meta Tags -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta property="twitter:domain" content="fantastico.vercel.app" />
+		<meta property="twitter:url" content="https://fantastico.vercel.app" />
+		<meta name="twitter:title" content="Literatura Fantástica" />
+		<meta name="twitter:description" content="Descubre las definiciones, cuentos y autores de la Literatura Fantástica!" />
+		<meta name="twitter:image" content="favicon.png" />
+		
+		<link rel="canonical" href="https://fantastico.vercel.app" />
 	</head>
 	<body>
 		<slot />
@@ -26,6 +42,8 @@ const { title } = Astro.props;
 	}
 
 	body {
+		padding: 0;
+		margin: 0;
 		font-family: system-ui, sans-serif;
 	}
 </style>
