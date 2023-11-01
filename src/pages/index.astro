@@ -49,6 +49,38 @@ import Nav from '../components/Nav.astro';
 		capacidad imaginativa que muestra seres sobrenaturales, hechos anormales o
 		situaciones irreales.
 
+		<details id='videos__container'>
+			<summary>Vídeos Explicativos</summary>
+
+			<div id='videos'>
+				<lite-youtube
+					videoid='MArMsy-rCAA'
+					title='Literatura fantástica en dos minutos'>
+					<span id='video-text'>Literatura fantástica en dos minutos</span>
+				</lite-youtube>
+				<lite-youtube
+					videoid='3WdKa8SNPrY'
+					title='Señor Borges, ¿Que opina de la Literatura Fantástica?'>
+					<span id='video-text'
+						>Señor Borges, ¿Que opina de la Literatura Fantástica?</span
+					>
+				</lite-youtube>
+				<lite-youtube
+					videoid='fs2x8Uu6kxI'
+					title='Literatura fantástica: definiciones'>
+					<span id='video-text'>Literatura fantástica: definiciones</span>
+				</lite-youtube>
+				<lite-youtube
+					videoid='SlpSIS0DsJ0'
+					title='Julio Cortázar sobre lo fantástico en su obra | Entrevista con Joaquín Soler'>
+					<span id='video-text'
+						>Julio Cortázar sobre lo fantástico en su obra | Entrevista con
+						Joaquín Soler</span
+					>
+				</lite-youtube>
+			</div>
+		</details>
+
 		<h2>Cuentos y Autores</h2>
 		<article>
 			<h3>Julio Cortázar</h3>
@@ -98,11 +130,11 @@ import Nav from '../components/Nav.astro';
 			<div id='books__container'>
 				<div>
 					<img
-						src='img/samantha/en-la-estepa.jpg'
+						src='img/samantha/un-hombre-sin-suerte.jpg'
 						alt='Portada del libro En la estepa'
 						loading='lazy'
 					/>
-					<h4>En la estepa</h4>
+					<h4>Un Hombre sin Suerte</h4>
 				</div>
 
 				<div>
@@ -152,9 +184,19 @@ import Nav from '../components/Nav.astro';
 					/>
 					<h4>Sredni Vashtar</h4>
 				</div>
+
+				<div>
+					<img
+						src='img/saki/la-ventana-abierta.jpg'
+						alt='Portada del libro Sredni Vashtar'
+						loading='lazy'
+					/>
+					<h4>La Ventana Abierta</h4>
+				</div>
 			</div>
 		</article>
 	</main>
+	<footer>Hecho para la EESº77</footer>
 </Layout>
 
 <style>
@@ -187,6 +229,11 @@ import Nav from '../components/Nav.astro';
 		line-height: 1.6;
 	}
 
+	li {
+		margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
+	}
+
 	h1 {
 		font-size: 3.2rem;
 		font-weight: 700;
@@ -206,9 +253,33 @@ import Nav from '../components/Nav.astro';
 		margin-top: 10px;
 	}
 
-	li {
-		margin-top: 0.5rem;
-		margin-bottom: 0.5rem;
+	article {
+		margin-bottom: 25px;
+	}
+
+	#videos__container {
+		margin-top: 10px;
+
+		& summary {
+			padding: 10px 0;
+			outline: none;
+		}
+
+		#video-text {
+			color: #fff;
+			position: absolute;
+			background: rgb(0, 0, 0);
+			background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, transparent);
+			text-shadow: 1px 1px 1px #3d3d3d;
+			padding: 10px 15px;
+			width: 100%;
+		}
+	}
+
+	#videos {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
 	}
 
 	#books__container {
@@ -233,5 +304,12 @@ import Nav from '../components/Nav.astro';
 			text-align: center;
 			font-size: 20px;
 		}
+	}
+
+	footer {
+		background: #105359;
+		color: #fff;
+		text-align: center;
+		padding: 1rem;
 	}
 </style>
