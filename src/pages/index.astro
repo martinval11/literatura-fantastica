@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Video from '../components/Video.astro';
 import Nav from '../components/Nav.astro';
 ---
 
@@ -54,36 +55,26 @@ import Nav from '../components/Nav.astro';
 			<summary>Vídeos Explicativos</summary>
 
 			<div id='videos'>
-				<lite-youtube
-					videoid='gHQzlBCFPzo'
-					title='Literatura fantástica'>
-					<span id='video-text'>Literatura fantástica</span>
-				</lite-youtube>
-				<lite-youtube
-					videoid='MArMsy-rCAA'
-					title='Literatura fantástica en dos minutos'>
-					<span id='video-text'>Literatura fantástica en dos minutos</span>
-				</lite-youtube>
-				<lite-youtube
-					videoid='3WdKa8SNPrY'
-					title='Señor Borges, ¿Que opina de la Literatura Fantástica?'>
-					<span id='video-text'
-						>Señor Borges, ¿Que opina de la Literatura Fantástica?</span
-					>
-				</lite-youtube>
-				<lite-youtube
-					videoid='fs2x8Uu6kxI'
-					title='Literatura fantástica: definiciones'>
-					<span id='video-text'>Literatura fantástica: definiciones</span>
-				</lite-youtube>
-				<lite-youtube
-					videoid='SlpSIS0DsJ0'
-					title='Julio Cortázar sobre lo fantástico en su obra | Entrevista con Joaquín Soler'>
-					<span id='video-text'
-						>Julio Cortázar sobre lo fantástico en su obra | Entrevista con
-						Joaquín Soler</span
-					>
-				</lite-youtube>
+				<Video
+					id='gHQzlBCFPzo'
+					title='Literatura fantástica'
+				/>
+				<Video
+					id='MArMsy-rCAA'
+					title='Literatura fantástica en dos minutos'
+				/>
+				<Video
+					id='3WdKa8SNPrY'
+					title='Señor Borges, ¿Que opina de la Literatura Fantástica?'
+				/>
+				<Video
+					id='fs2x8Uu6kxI'
+					title='Literatura fantástica: definiciones'
+				/>
+				<Video
+					id='SlpSIS0DsJ0'
+					title='Julio Cortázar sobre lo fantástico en su obra | Entrevista con Joaquín Soler'
+				/>
 			</div>
 		</details>
 
@@ -276,16 +267,6 @@ import Nav from '../components/Nav.astro';
 		& summary {
 			padding: 10px 0;
 			outline: none;
-		}
-
-		#video-text {
-			color: #fff;
-			position: absolute;
-			background: rgb(0, 0, 0);
-			background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, transparent);
-			text-shadow: 1px 1px 1px #3d3d3d;
-			padding: 10px 15px;
-			width: 100%;
 		}
 	}
 

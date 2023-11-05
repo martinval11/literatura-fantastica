@@ -1,0 +1,26 @@
+---
+interface Props {
+	id: string;
+	title: string;
+}
+
+const { id, title } = Astro.props;
+---
+
+<lite-youtube
+	videoid={id}
+	title={title}>
+	<span id='video-text'>{title}</span>
+</lite-youtube>
+
+<style>
+	#video-text {
+		color: #fff;
+		position: absolute;
+		background: rgb(0, 0, 0);
+		background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, transparent);
+		text-shadow: 1px 1px 1px #3d3d3d;
+		padding: 10px 15px;
+		width: 100%;
+	}
+</style>
