@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
 import Nav from '../components/Nav.astro';
 ---
 
@@ -86,41 +87,45 @@ import Nav from '../components/Nav.astro';
 			<h3>Julio Cortázar</h3>
 
 			<div id='books__container'>
-				<div>
+				<Card
+					link='https://www.ingenieria.unam.mx/dcsyhfi/material_didactico/Literatura_Hispanoamericana_Contemporanea/Autores_C/CORTAZAR/Casa.pdf'>
 					<img
 						src='img/cortazar/casatomada.jpeg'
 						alt='Portada del libro casa tomada de Julio Cortázar'
 						loading='lazy'
 					/>
 					<h4>Casa Tomada</h4>
-				</div>
+				</Card>
 
-				<div>
+				<Card
+					link='https://www.ingenieria.unam.mx/dcsyhfi/material_didactico/Literatura_Hispanoamericana_Contemporanea/Autores_C/CORTAZAR/Continuidad.pdf'>
 					<img
 						src='img/cortazar/continuidad-de-los-parques.jpg'
 						alt='Portada del libro Continuidad de los parques'
 						loading='lazy'
 					/>
 					<h4>Continuidad de los parques</h4>
-				</div>
+				</Card>
 
-				<div>
+				<Card
+					link='https://www.ingenieria.unam.mx/dcsyhfi/material_didactico/Literatura_Hispanoamericana_Contemporanea/Autores_C/CORTAZAR/AxO.pdf'>
 					<img
 						src='img/cortazar/axolotl.jpg'
 						alt='Portada del libro Axolotl'
 						loading='lazy'
 					/>
 					<h4>Axolotl</h4>
-				</div>
+				</Card>
 
-				<div>
+				<Card
+					link='https://www.ingenieria.unam.mx/dcsyhfi/material_didactico/Literatura_Hispanoamericana_Contemporanea/Autores_C/CORTAZAR/Lejana.pdf'>
 					<img
 						src='img/cortazar/lejana.jpg'
 						alt='Portada del libro Lejana'
 						loading='lazy'
 					/>
 					<h4>Lejana</h4>
-				</div>
+				</Card>
 			</div>
 		</article>
 
@@ -128,23 +133,24 @@ import Nav from '../components/Nav.astro';
 			<h3>Samantha Schweblin</h3>
 
 			<div id='books__container'>
-				<div>
+				<Card link='https://bcn.gob.ar/uploads/Un-hombre-sin-suerte.pdf'>
 					<img
 						src='img/samantha/un-hombre-sin-suerte.jpg'
 						alt='Portada del libro En la estepa'
 						loading='lazy'
 					/>
 					<h4>Un Hombre sin Suerte</h4>
-				</div>
+				</Card>
 
-				<div>
+				<Card
+					link='https://ele.chaco.gob.ar/pluginfile.php/338866/mod_folder/content/0/Cuentos/Samanta%20Schweblin.%20P%C3%A1jaros%20en%20la%20boca.pdf?forcedownload=1'>
 					<img
 						src='img/samantha/pajaros-en-la-boca.jpg'
 						alt='Portada del libro Pajaros en la boca'
 						loading='lazy'
 					/>
 					<h4>Pájaros en la boca</h4>
-				</div>
+				</Card>
 			</div>
 		</article>
 
@@ -152,23 +158,24 @@ import Nav from '../components/Nav.astro';
 			<h3>Jorge Luis Borges</h3>
 
 			<div id='books__container'>
-				<div>
+				<Card
+					link='https://www.ingenieria.unam.mx/dcsyhfi/material_didactico/Literatura_Hispanoamericana_Contemporanea/Autores_B/BORGES/ruinas.pdf'>
 					<img
 						src='img/borges/las-ruinas-circulares.jpg'
 						alt='Portada del libro Las Ruinas Circulares'
 						loading='lazy'
 					/>
 					<h4>Las Ruinas Circulares</h4>
-				</div>
+				</Card>
 
-				<div>
+				<Card link='http://biblio3.url.edu.gt/Libros/borges/borges.pdf'>
 					<img
 						src='img/borges/antologia-de-la-literatura-fantastica.webp'
 						alt='Portada del libro de la Antología de la literatura fantástica'
 						loading='lazy'
 					/>
 					<h4>Antología de la Literatura Fantástica</h4>
-				</div>
+				</Card>
 			</div>
 		</article>
 
@@ -176,23 +183,24 @@ import Nav from '../components/Nav.astro';
 			<h3>Hector Hugh Munro (Saki)</h3>
 
 			<div id='books__container'>
-				<div>
+				<Card link='https://ciudadseva.com/texto/sredni-vashtar/'>
 					<img
 						src='img/saki/sredni-vashtar.jpg'
 						alt='Portada del libro Sredni Vashtar'
 						loading='lazy'
 					/>
 					<h4>Sredni Vashtar</h4>
-				</div>
+				</Card>
 
-				<div>
+				<Card
+					link='https://aula.prepararte.com.ar/uploads/1619640873%20-%20La%20ventana%20abierta%20de%20Saki.pdf'>
 					<img
 						src='img/saki/la-ventana-abierta.jpg'
 						alt='Portada del libro Sredni Vashtar'
 						loading='lazy'
 					/>
 					<h4>La Ventana Abierta</h4>
-				</div>
+				</Card>
 			</div>
 		</article>
 	</main>
@@ -291,12 +299,6 @@ import Nav from '../components/Nav.astro';
 			width: 100%;
 			height: 360px;
 			object-fit: cover;
-		}
-
-		& div {
-			border: 1px solid #ddd;
-			padding: 10px;
-			border-radius: 3px;
 		}
 
 		& h4 {
